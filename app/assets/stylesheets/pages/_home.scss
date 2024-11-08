@@ -1,1 +1,133 @@
 // Specific CSS for your home-page
+.body {
+  background-color: #feefe2;
+  position: relative;
+
+  .logo-image {
+    width: 350px;
+  }
+
+  .main-header {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #feefe2;
+    position: relative;
+
+    .main-header-image-left {
+      height: 100%;
+      max-width: 50%;
+      // border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      background-image: url('photoIntro.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width:100%;
+      border-right:0.5px solid #BF7857;
+      border-bottom-right-radius:50px
+    }
+    .main-header-image-right {
+      height: 100%;
+      max-width: 50%;
+      // border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      background-image: url('https://images.unsplash.com/photo-1598901986949-f593ff2a31a6?q=80&w=2994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width:100%;
+      border-left:0.5px solid #BF7857;
+      border-bottom-left-radius:50px
+
+    }
+
+    .main-header-logo1 {
+      width: 15%;
+      // padding-left: 20px;
+      height: 100%;
+      background-color: #feefe2;
+      color: #BF7857;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-header-logo2 {
+      width: 100% !important;
+      height: 100%;
+      position: relative;
+      background-color: #feefe2;
+      color: #BF7857;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  // .main-header {
+  //   height: 400px;
+  //   width: 100%;
+  //   display: flex;
+  //   background-color: #feefe2;
+  //   align-items: center;
+
+  //   .main-header-image {
+  //     width: 50%;
+  //     height: 90%;
+  //     // border-top-right-radius: 50%;
+  //     // border-bottom-right-radius: 50%;
+  //     border-radius: 40%;
+  //     // background-color: aquamarine;  // used to see the space of the background
+  //     // background-image: url('massageRaya.jpg');
+  //     background-image: url('photoIntro.jpeg');
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //   }
+
+  //   .main-header-logo {
+  //     width: 35%;
+  //     padding-left: 20px;
+  //     height: 100%;
+  //     background-color: #feefe2;
+  //     color: #BF7857;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  // }
+
+  .main-content {
+    background-color: #feefe2;
+
+    .main-content-text {
+      width: 100% ;
+      // padding-top: 80px;
+      margin: auto;
+      // height: 500px;
+      color:#BF7857;
+      text-align:justify;
+      // background-color: #fcfcfc;
+      padding: 0 100px;
+
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+}
