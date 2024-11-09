@@ -7,6 +7,18 @@
     width: 350px;
   }
 
+  .image-center-logo {
+    width: 30%;
+    max-width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:20px;
+    box-shadow: -5px -5px 5px rgba(255,255,255,0.4),
+    5px 5px 5px rgba(0,0,0,0.4) ;
+  }
+
   .main-header {
     height: 500px;
     width: 100%;
@@ -126,6 +138,15 @@
       }
       p {
         font-size: 1rem;
+      }
+      a {
+        color: #BF7857;
+        // color: #ff8e5a;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+          color: #ff8e5a;
+        }
       }
     }
   }
