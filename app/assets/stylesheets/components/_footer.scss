@@ -1,0 +1,43 @@
+.footer {
+  background-color:#feefe2;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid rgba(191, 120, 87, 0.7);
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically */
+
+  .item {
+    margin: 0 100px;
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 5px;
+      background-image: url(logoLight.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+
+  .contact {
+    a {
+      color: #666;
+      text-decoration: none;
+      &:hover {
+        color: #bf7857;
+      }
+    }
+  }
+
+
+}

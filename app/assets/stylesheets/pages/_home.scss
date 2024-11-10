@@ -47,6 +47,7 @@
       border-right:0.5px solid #BF7857;
       border-bottom-right-radius:50px;
     }
+
     .main-header-image-right {
       height: 100%;
       max-width: 50%;
@@ -54,7 +55,7 @@
       display: flex;
       flex-direction: column;
       text-align: right;
-      background-image: url('https://images.unsplash.com/photo-1598901986949-f593ff2a31a6?q=80&w=2994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-image: url('kobido1.jpeg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -98,38 +99,6 @@
     //   }
     // }
   }
-  // .main-header {
-  //   height: 400px;
-  //   width: 100%;
-  //   display: flex;
-  //   background-color: #feefe2;
-  //   align-items: center;
-
-  //   .main-header-image {
-  //     width: 50%;
-  //     height: 90%;
-  //     // border-top-right-radius: 50%;
-  //     // border-bottom-right-radius: 50%;
-  //     border-radius: 40%;
-  //     // background-color: aquamarine;  // used to see the space of the background
-  //     // background-image: url('massageRaya.jpg');
-  //     background-image: url('photoIntro.jpeg');
-  //     background-size: cover;
-  //     background-repeat: no-repeat;
-  //   }
-
-  //   .main-header-logo {
-  //     width: 35%;
-  //     padding-left: 20px;
-  //     height: 100%;
-  //     background-color: #feefe2;
-  //     color: #BF7857;
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-  // }
 
   .main-content {
     background-color: #feefe2;
@@ -161,6 +130,329 @@
         font-weight: bold;
         &:hover {
           color: #ff8e5a;
+        }
+      }
+    }
+
+    .massage1 {
+      position: relative; /* Ensures a stacking context */
+      width: 90%;
+      margin: auto;
+      height: 500px;
+      padding: 20px;
+
+
+      .central-line-massage1 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(191, 120, 87, 0.7);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 1; /* Behind the content */
+      }
+
+      .massage1-content {
+        z-index: 10; /* Significantly above the central line */
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+        background-color: #feefe2;
+        border-radius: 20px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #BF7857;
+        border-top: 1px solid #bf78574e;
+        border-bottom: 1px solid #bf78574e;
+
+        .massage1-text {
+          width: 50%;
+          margin: auto;
+          font-size: 1em;
+          text-align: left;
+
+          table {
+            width:200px;
+            margin: auto;
+
+
+            th, td {
+              padding: 5px 5px 0 5px;
+              text-align: center;
+            }
+          }
+
+          h1 {
+            text-align: center;
+            color: #ff8e5a;
+            font-family:'Tan Pearl', sans-serif;
+          }
+        }
+
+        .massage1-image {
+          width: 30%;
+          height: 100%;
+          text-align: center;
+          background-image: url('massageRaya.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 20px;
+          box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                      inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+          margin-right: 50px;
+        }
+      }
+    }
+
+    .massage2 {
+      position: relative; /* Ensures a stacking context */
+      width: 90%;
+      margin: auto;
+      height: 600px;
+      padding: 20px;
+
+
+      .central-line-massage2 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(191, 120, 87, 0.7);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 1; /* Behind the content */
+      }
+
+      .massage2-content {
+        z-index: 10; /* Significantly above the central line */
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+        background-color: #feefe2;
+        border-radius: 20px;
+        // box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        // margin: 10px auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #BF7857;
+        border-top: 1px solid #bf78574e;
+        border-bottom: 1px solid #bf78574e;
+
+        .massage2-text {
+          width: 50%;
+          margin: auto;
+          font-size: 1em;
+          text-align: left;
+
+          table {
+            width:200px;
+            margin: auto;
+
+
+            th, td {
+              padding: 5px 5px 0 5px;
+              text-align: center;
+            }
+          }
+
+          h1 {
+            text-align: center;
+            color: #ff8e5a;
+            font-family:'Tan Pearl', sans-serif;
+          }
+
+          p.info {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 10px;
+          }
+        }
+
+        .massage2-image {
+          width: 30%;
+          height: 100%;
+          text-align: center;
+          background-image: url('kobido.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 20px;
+          box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                      inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+          margin-right: 50px;
+        }
+      }
+    }
+
+    .massage3 {
+      position: relative; /* Ensures a stacking context */
+      width: 90%;
+      margin: auto;
+      height: 600px;
+      padding: 20px;
+
+
+      .central-line-massage3 {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(191, 120, 87, 0.7);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 1; /* Behind the content */
+      }
+
+      .massage3-content {
+        z-index: 10; /* Significantly above the central line */
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+        background-color: #feefe2;
+        border-radius: 20px;
+        // box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        // margin: 10px auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #BF7857;
+        border-top: 1px solid #bf78574e;
+        border-bottom: 1px solid #bf78574e;
+
+        .massage3-text {
+          width: 50%;
+          margin: auto;
+          font-size: 1em;
+          text-align: left;
+
+          table {
+            width:200px;
+            margin: auto;
+
+
+            th, td {
+              padding: 5px 5px 0 5px;
+              text-align: center;
+            }
+          }
+
+          h1 {
+            text-align: center;
+            color: #ff8e5a;
+            font-family:'Tan Pearl', sans-serif;
+          }
+
+          p.info {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 10px;
+          }
+        }
+
+        .massage3-image {
+          width: 30%;
+          height: 100%;
+          text-align: center;
+          background-image: url('footMassage.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 20px;
+          box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                      inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+          margin-right: 50px;
+        }
+      }
+    }
+    .munz {
+      position: relative; /* Ensures a stacking context */
+      width: 90%;
+      margin: auto;
+      height: 800px;
+      padding: 20px;
+
+
+      .central-line-munz {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(191, 120, 87, 0.7);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 1; /* Behind the content */
+      }
+
+      .munz-content {
+        z-index: 10; /* Significantly above the central line */
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+        background-color: #feefe2;
+        border-radius: 20px;
+        // box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        // margin: 10px auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #BF7857;
+        border-top: 1px solid #bf78574e;
+        border-bottom: 1px solid #bf78574e;
+
+        .munz-text {
+          width: 50%;
+          margin: auto;
+          font-size: 1em;
+          text-align: left;
+
+          table {
+            width:200px;
+            margin: auto;
+
+
+            th, td {
+              padding: 5px 5px 0 5px;
+              text-align: center;
+            }
+          }
+
+          h1 {
+            text-align: center;
+            color: #ff8e5a;
+            font-family:'Tan Pearl', sans-serif;
+          }
+
+          p.info {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 10px;
+          }
+        }
+
+        .munz-image {
+          width: 40%;
+          height: 100%;
+          text-align: center;
+          background-image: url('munz.jpeg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 20px;
+          box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                      inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+          margin-right: 50px;
         }
       }
     }
