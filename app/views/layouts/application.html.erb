@@ -19,6 +19,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Google Map-->
+    <script>
+      function initMap() {
+        // First Map: Raya Biarritz
+        let rayaBiarritz = { lat: 43.481023003371405, lng: -1.5103733423281651 };
+        let mapMassage = new google.maps.Map(document.getElementById('map1'), {
+          zoom: 18,
+          center: rayaBiarritz
+        });
+        let markerRaya = new google.maps.Marker({
+          position: rayaBiarritz,
+          map: mapMassage
+        });
+
+        // Second Map: Muntz
+        let muntz = { lat: 43.48111491245195, lng: -1.557998520238156 };
+        let mapMuntz = new google.maps.Map(document.getElementById("map2"), {
+          zoom: 18,
+          center: muntz
+        });
+        let markerMuntz = new google.maps.Marker({
+          position: muntz,
+          map: mapMuntz
+        });
+      }
+    </script>
 
     <style>
       * {
@@ -37,4 +63,6 @@
   <body>
     <%= yield %>
   </body>
+  <%# script to load google map %>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHb9G0A9MOGWlj6vjUBji4DADWFybLRo&callback=initMap" ></script>
 </html>

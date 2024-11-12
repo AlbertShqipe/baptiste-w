@@ -1,0 +1,144 @@
+.map-massage {
+  /* Set the size of the div element that contains the map */
+  margin: auto;
+  margin-top: 80px;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    height: 900px;
+
+  }
+
+  .map-caption {
+    margin-top: 30px;
+    padding: 0;
+    font-size: 1.5em;
+    position: relative;
+
+    @media (max-width: 960px) {
+      font-size: 1em;
+      margin-top: 0;
+
+    }
+
+    h3 {
+      padding: 0;
+      text-align: center;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      a {
+        color: #bf7857;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        @media (max-width: 960px) {
+          font-size: 1em;
+        }
+      }
+    }
+
+    @media (max-width: 960px) {
+      font-size: 1em;
+    }
+  }
+  @media (max-width:960px) {
+    flex-direction: column;
+  }
+  #map1 {
+    height: 400px; /* The height is 400 pixels */
+    width: 450; /* The width is the width of the web page */
+    // border-bottom: rgb(246, 202, 46);
+    border-top: 1px solid #bf78574e;;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      height: 300px; /* The height is 400 pixels */
+      width: 80%; /* The width is the width of the web page */
+      margin-top: 0px;
+      border-bottom: 1px solid #bf78574e;;
+      border-top: 1px solid #bf78574e;;
+      margin: auto; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+    @media (max-width: 576px) {
+      height: 200px; /* The height is 400 pixels */
+      width: 80%; /* The width is the width of the web page */
+      margin-top: 0px;
+      border-bottom: 1px solid #bf78574e;;
+      border-top: 1px solid #bf78574e;;
+      margin: auto; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+  }
+
+  .map-massage {
+    width: 500px !important;
+    height: 300px !important;
+    margin-top: 50px !important;
+    border-bottom: none !important;
+
+    @media (max-width: 768px) {
+      width: 300px !important;
+      font-size: 9px;
+      letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+    @media (max-width: 576px) {
+      width: 100% !important;
+      font-size: 9px;
+      letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+  }
+
+  /* Set the size of the div element that contains the map */
+  #map2 {
+    height: 400px; /* The height is 400 pixels */
+    width: 80%; /* The width is the width of the web page */
+    // border-bottom: rgb(246, 202, 46);
+    border-top: 1px solid #bf78574e;;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      height: 300px; /* The height is 400 pixels */
+      width: 80%; /* The width is the width of the web page */
+      margin-top: 0px;
+      border-bottom: 1px solid #bf78574e;;
+      border-top: 1px solid #bf78574e;;
+      margin: auto; // Adjust letter spacing for smartphones /* Adjust height as needed */
+      margin-bottom: 0;
+    }
+    @media (max-width: 576px) {
+      height: 200px; /* The height is 400 pixels */
+      width: 80%; /* The width is the width of the web page */
+      margin-top: 0px;
+      margin-bottom: 0;
+      border-bottom: 1px solid #bf78574e;;
+      border-top: 1px solid #bf78574e;;
+      margin: auto; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+  }
+
+  .map-muntz {
+    width: 500px !important;
+    height: 300px !important;
+    margin-top: 50px !important;
+    border-bottom: none !important;
+
+    @media (max-width: 768px) {
+      width: 300px !important;
+      font-size: 9px;
+      letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+    @media (max-width: 576px) {
+      width: 100% !important;
+      font-size: 9px;
+      letter-spacing: 4px; // Adjust letter spacing for smartphones /* Adjust height as needed */
+    }
+  }
+}

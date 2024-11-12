@@ -29,7 +29,6 @@
 
     @media (max-width: 760px) {
       height: 200px;
-
     }
 
     .main-header-image-left {
@@ -73,35 +72,24 @@
       top: 0;
       transform: translateX(-50%);
     }
-    // .main-header-logo1 {
-    //   width: 15%;
-    //   // padding-left: 20px;
-    //   height: 100%;
-    //   background-color: #feefe2;
-    //   color: #BF7857;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
-    // .main-header-logo2 {
-    //   width: 100% !important;
-    //   height: 100%;
-    //   position: relative;
-    //   background-color: #feefe2;
-    //   color: #BF7857;
-
-    //   img {
-    //     position: absolute;
-    //     left: 50%;
-    //     top: 50%;
-    //     transform: translate(-50%, -50%);
-    //   }
-    // }
   }
 
   .main-content {
     background-color: #feefe2;
+
+    .image-separator1, .image-separator2 {
+      text-align: center;
+
+      img {
+        width:200px;
+
+        @media (max-width: 760px) {
+          width: 100px;
+
+        }
+      }
+
+    }
 
     .main-content-text {
       width: 100% ;
@@ -112,17 +100,17 @@
 
       @media (max-width: 760px) {
         padding: 0 20px;
-
       }
-
 
       h2 {
         font-size: 2em;
         margin-bottom: 20px;
       }
+
       p {
-        font-size: 1rem;
+        font-size: 0.6rem;
       }
+
       a {
         color: #BF7857;
         // color: #ff8e5a;
@@ -141,6 +129,9 @@
       height: 500px;
       padding: 20px;
 
+      @media (max-width: 960px) {
+        height: 700px;
+      }
 
       .central-line-massage1 {
         position: absolute;
@@ -169,20 +160,38 @@
         border-top: 1px solid #bf78574e;
         border-bottom: 1px solid #bf78574e;
 
+        @media (max-width: 960px) {
+          padding: 10px;
+          flex-direction: column;
+        }
+
         .massage1-text {
           width: 50%;
           margin: auto;
           font-size: 1em;
           text-align: left;
 
+          @media (max-width: 960px) {
+            width: 90%;
+            font-size: 0.6em;
+          }
+
           table {
             width:200px;
             margin: auto;
 
+            @media (max-width: 960px) {
+              width: 100px;
+              margin-top:0;
+            }
 
             th, td {
               padding: 5px 5px 0 5px;
               text-align: center;
+
+              @media (max-width: 960px) {
+                padding: 0px 2px 0 2px;
+              }
             }
           }
 
@@ -205,6 +214,12 @@
           box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                       inset 5px 5px 5px rgba(0, 0, 0, 0.2);
           margin-right: 50px;
+
+          @media (max-width: 960px) {
+            width: 70%;
+            height: 50%;
+            margin: auto;
+          }
         }
       }
     }
@@ -216,6 +231,9 @@
       height: 600px;
       padding: 20px;
 
+      @media (max-width: 960px) {
+        height: 700px;
+      }
 
       .central-line-massage2 {
         position: absolute;
@@ -246,21 +264,41 @@
         border-top: 1px solid #bf78574e;
         border-bottom: 1px solid #bf78574e;
 
+        @media (max-width: 960px) {
+          padding: 10px;
+          flex-direction: column-reverse;
+        }
+
         .massage2-text {
           width: 50%;
           margin: auto;
           font-size: 1em;
           text-align: left;
 
+          @media (max-width: 960px) {
+            width: 90%;
+            font-size: 0.6em;
+
+          }
+
           table {
             width:200px;
             margin: auto;
 
+            @media (max-width: 960px) {
+              width: 100px;
+              margin-top:0;
+            }
 
             th, td {
               padding: 5px 5px 0 5px;
               text-align: center;
+
+              @media (max-width: 960px) {
+                padding: 0px 2px 0 2px;
+              }
             }
+
           }
 
           h1 {
@@ -273,6 +311,11 @@
             text-align: center;
             font-size: 0.8em;
             margin-top: 10px;
+
+            @media (max-width: 960px) {
+              font-size: 0.6em;
+              margin-top: 5px;
+            }
           }
         }
 
@@ -288,6 +331,12 @@
           box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                       inset 5px 5px 5px rgba(0, 0, 0, 0.2);
           margin-right: 50px;
+
+          @media (max-width: 960px) {
+            width: 70%;
+            height: 50%;
+            margin: auto;
+          }
         }
       }
     }
@@ -329,20 +378,38 @@
         border-top: 1px solid #bf78574e;
         border-bottom: 1px solid #bf78574e;
 
+        @media (max-width: 960px) {
+          padding: 10px;
+          flex-direction: column;
+        }
+
         .massage3-text {
           width: 50%;
           margin: auto;
           font-size: 1em;
           text-align: left;
 
+          @media (max-width: 960px) {
+            width: 90%;
+            font-size: 0.6em;
+          }
+
           table {
             width:200px;
             margin: auto;
 
+            @media (max-width: 960px) {
+              width: 100px;
+              margin-top:0;
+            }
 
             th, td {
               padding: 5px 5px 0 5px;
               text-align: center;
+
+              @media (max-width: 960px) {
+                padding: 0px 2px 0 2px;
+              }
             }
           }
 
@@ -353,9 +420,14 @@
           }
 
           p.info {
-            text-align: center;
-            font-size: 0.8em;
-            margin-top: 10px;
+          text-align: center;
+          font-size: 0.8em;
+          margin-top: 10px;
+
+            @media (max-width: 960px) {
+              font-size: 0.6em;
+              margin-top: 5px;
+            }
           }
         }
 
@@ -371,16 +443,26 @@
           box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                       inset 5px 5px 5px rgba(0, 0, 0, 0.2);
           margin-right: 50px;
+
+          @media (max-width: 960px) {
+            width: 70%;
+            height: 50%;
+            margin: auto;
+          }
         }
       }
     }
+
     .munz {
       position: relative; /* Ensures a stacking context */
       width: 90%;
       margin: auto;
-      height: 800px;
+      height: 850px;
       padding: 20px;
 
+      @media (max-width: 960px) {
+        height: 1000px;
+      }
 
       .central-line-munz {
         position: absolute;
@@ -411,20 +493,39 @@
         border-top: 1px solid #bf78574e;
         border-bottom: 1px solid #bf78574e;
 
+        @media (max-width: 960px) {
+          padding: 10px;
+          flex-direction: column;
+        }
+
         .munz-text {
           width: 50%;
           margin: auto;
           font-size: 1em;
           text-align: left;
 
+          @media (max-width: 960px) {
+            width: 90%;
+            font-size: 0.6em;
+          }
+
           table {
-            width:200px;
+            width:500px;
             margin: auto;
 
+            @media (max-width: 960px) {
+              width: 100%;
+              margin-top:0;
+            }
 
             th, td {
               padding: 5px 5px 0 5px;
               text-align: center;
+
+              @media (max-width: 960px) {
+                padding: 0px 2px 0 2px;
+                width: 50%;
+              }
             }
           }
 
@@ -438,6 +539,11 @@
             text-align: center;
             font-size: 0.8em;
             margin-top: 10px;
+
+            @media (max-width: 960px) {
+              font-size: 0.6em;
+              margin-top: 5px;
+            }
           }
         }
 
@@ -453,9 +559,15 @@
           box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                       inset 5px 5px 5px rgba(0, 0, 0, 0.2);
           margin-right: 50px;
+
+          @media (max-width: 960px) {
+            width: 80%;
+            height: 50%;
+            margin: auto;
+            margin-top: 10px;
+          }
         }
       }
     }
   }
-
 }
