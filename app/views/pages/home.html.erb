@@ -143,19 +143,26 @@
     </div>
   </div>
   <div class="map-container-pc" id="pc">
-    <h1 style="text-align:center">Where we are</h1>
+    <%# <h1>Where we are</h1> %>
     <div class="maps">
       <div class="map-caption">
         <div id="map1" class="map-massage"></div>
-        <h3><a href="https://www.google.com/maps/place/1+Av.+de+Minerva,+64600+Anglet/@43.4808585,-1.5101789,17z/data=!3m1!4b1!4m6!3m5!1s0xd51400f75db4b73:0x734da436959648b3!8m2!3d43.4808585!4d-1.5101789!16s%2Fg%2F11gfhbkjrb?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Massages</a></h3>
+        <h3><a href="https://www.google.com/maps/place/1+Av.+de+Minerva,+64600+Anglet/@43.4808585,-1.5101789,17z/data=!3m1!4b1!4m6!3m5!1s0xd51400f75db4b73:0x734da436959648b3!8m2!3d43.4808585!4d-1.5101789!16s%2Fg%2F11gfhbkjrb?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Massages <span class="material-symbols-outlined">left_click</span></a></h3>
+
       </div>
       <div class="map-caption">
         <div id="map2" class="map-muntz"></div>
-        <h3><a href="https://www.google.com/maps/place/8+Rue+Jean+Bart,+64200+Biarritz/@43.4809708,-1.5629177,17z/data=!3m1!4b1!4m6!3m5!1s0xd516ad7b0a6ecbf:0xd62e2f2bb86ae976!8m2!3d43.480967!4d-1.5580468!16s%2Fg%2F11c2h4th_f?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Cours Muntz</a></h3>
+        <h3><a href="https://www.google.com/maps/place/8+Rue+Jean+Bart,+64200+Biarritz/@43.4809708,-1.5629177,17z/data=!3m1!4b1!4m6!3m5!1s0xd516ad7b0a6ecbf:0xd62e2f2bb86ae976!8m2!3d43.480967!4d-1.5580468!16s%2Fg%2F11c2h4th_f?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Cours Muntz Floor <span class="material-symbols-outlined">left_click</span></a></h3>
       </div>
     </div>
   </div>
-
+  <div id="phone">
+    <%# <h1 style="margin-top:10px">Where we are</h1> %>
+    <h3><a href="https://www.google.com/maps/place/1+Av.+de+Minerva,+64600+Anglet/@43.4808585,-1.5101789,17z/data=!3m1!4b1!4m6!3m5!1s0xd51400f75db4b73:0x734da436959648b3!8m2!3d43.4808585!4d-1.5101789!16s%2Fg%2F11gfhbkjrb?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Massages <span class="material-symbols-outlined">left_click</span></a></h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5790.058639276404!2d-1.5101788999999999!3d43.4808585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51400f75db4b73%3A0x734da436959648b3!2s1%20Av.%20de%20Minerva%2C%2064600%20Anglet!5e0!3m2!1sen!2sfr!4v1731507168902!5m2!1sen!2sfr" width="300px" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h3 style="margin-top: 10px;"><a href="https://www.google.com/maps/place/8+Rue+Jean+Bart,+64200+Biarritz/@43.4809708,-1.5629177,17z/data=!3m1!4b1!4m6!3m5!1s0xd516ad7b0a6ecbf:0xd62e2f2bb86ae976!8m2!3d43.480967!4d-1.5580468!16s%2Fg%2F11c2h4th_f?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Pour les Cours Muntz Floor<span class="material-symbols-outlined">left_click</span></a></h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.024122021267!2d-1.5606217232832906!3d43.48096697111091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516ad7b0a6ecbf%3A0xd62e2f2bb86ae976!2s8%20Rue%20Jean%20Bart%2C%2064200%20Biarritz!5e0!3m2!1sen!2sfr!4v1731507596116!5m2!1sen!2sfr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
   <div class="swiper mySwiper mb-2" data-controller="swiper">
     <div class="swiper-wrapper">
       <% @reviews.each do |review|%>
@@ -187,8 +194,8 @@
       </div>
     </div>
     <div class="contact">
-      <a href="tel:+33672412141">0672412141 <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="phone icon" ></a><br>
-      <a href="mailto:baptiste@raya-biarritz.fr">baptiste@raya-biarritz.fr <img src="https://img.icons8.com/?size=100&id=12580&format=png&color=000000" alt="email icon"></a>
+      <a href="tel:+33672412141">0672412141 <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=bf7857" alt="phone icon" ></a><br>
+      <a href="mailto:baptiste@raya-biarritz.fr">baptiste@raya-biarritz.fr <img src="https://img.icons8.com/?size=100&id=12580&format=png&color=bf7857" alt="email icon"></a>
     </div>
   </div>
 </div>

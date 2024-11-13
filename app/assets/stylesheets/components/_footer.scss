@@ -53,7 +53,7 @@
 
   .contact {
     position: absolute;
-    right: 20%;
+    right: 5%;
     top: 50%;
     transform: translate(0%, -50%);
     text-align: right;
@@ -65,16 +65,19 @@
     a {
       color: #bf7857;
       text-decoration: none;
+      display: inline-flex;
+      margin-bottom: 3px;
 
       @media (max-width:960px) {
         font-size: 0.6rem;
       }
 
       img {
-        width: 30px;
+        width: 25px;
+        margin-left: 5px;
 
         @media (max-width:960px) {
-          width: 15px;
+          display: none;
         }
       }
 
@@ -86,7 +89,7 @@
 
   .address {
     position: absolute;
-    left: 20%;
+    left: 5%;
     top: 50%;
     transform: translate(0%, -50%);
     font-size: 0.8em;
@@ -94,6 +97,15 @@
     @media (max-width: 960px) {
       font-size: 0.6rem;
       left: 5%;
+    }
+
+    a {
+      color: #BF7857;
+      // color: #ff8e5a;
+      font-weight: bold;
+      &:hover {
+        color: #ff8e5a;
+      }
     }
 
     p {

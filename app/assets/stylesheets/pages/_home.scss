@@ -514,6 +514,15 @@
             font-size: 0.6em;
           }
 
+          a {
+            color: #BF7857;
+            // color: #ff8e5a;
+            font-weight: bold;
+            &:hover {
+              color: #ff8e5a;
+            }
+          }
+
           table {
             width:500px;
             margin: auto;
