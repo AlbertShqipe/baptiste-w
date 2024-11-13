@@ -11,6 +11,10 @@
   z-index: 10;
   margin-top: 10px;
 
+  @media (max-width:960px) {
+    margin-top: 0px;
+
+  }
   svg {
     width: 40px;
     height: 40px;
