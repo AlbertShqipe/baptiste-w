@@ -164,6 +164,10 @@
 
 #pc {
   display: block;
+
+  h3 {
+    width:100%;
+  }
   @media (max-width: 960px) {
     display: none;
   }
