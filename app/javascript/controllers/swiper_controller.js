@@ -7,7 +7,7 @@ export default class extends Controller {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 10000, // 10 seconds delay
+        delay: 6000, // 6 seconds delay
         disableOnInteraction: false,
       },
       pagination: {
