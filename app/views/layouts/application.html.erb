@@ -23,28 +23,70 @@
     <!-- Google Map-->
     <script>
       function initMap() {
-        // First Map: Raya Biarritz
-        let rayaBiarritz = { lat: 43.481023003371405, lng: -1.5103733423281651 };
-        let mapMassage = new google.maps.Map(document.getElementById('map1'), {
+        // ---- First Map: Raya Biarritz ----
+        const rayaBiarritz = { lat: 43.481023003371405, lng: -1.5103733423281651 };
+        const mapMassage = new google.maps.Map(document.getElementById('map1'), {
           zoom: 18,
           center: rayaBiarritz
         });
-        let markerRaya = new google.maps.Marker({
+
+        const markerRaya = new google.maps.Marker({
           position: rayaBiarritz,
           map: mapMassage
         });
 
-        // Second Map: Muntz
-        let muntz = { lat: 43.48111491245195, lng: -1.557998520238156 };
-        let mapMuntz = new google.maps.Map(document.getElementById("map2"), {
-          zoom: 18,
-          center: muntz
+        const infoRaya = new google.maps.InfoWindow({
+          content: "<img src='assets/logoLight-c8c665c1aba8b83bac8cde2367ef43728bc674cbc32b9d18c674bdb5a2d917b5.png' width='50px'><div style='display:flex'><strong>Raya Biarritz</strong></div><br><strong>Massage</strong></div><br><a href='https://www.google.com/maps/place/RAYA+Biarritz/@43.481023,-1.511017,19z/data=!4m12!1m5!3m4!2zNDPCsDI4JzUxLjciTiAxwrAzMCczNy4zIlc!8m2!3d43.481023!4d-1.5103733!3m5!1s0xd516b944c8e2c8d:0x2a02ba6f010da807!8m2!3d43.4809218!4d-1.5103948!16s%2Fg%2F11h_dz5zpq!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D'>1 Av. de Minerva entrée A, 64600 Anglet</a>"
         });
-        let markerMuntz = new google.maps.Marker({
-          position: muntz,
+
+        markerRaya.addListener("click", () => {
+          infoRaya.open(mapMassage, markerRaya);
+        });
+
+
+        // ---- Second Map: Muntz ----
+        const mapMuntz = new google.maps.Map(document.getElementById("map2"), {
+          zoom: 12,
+          center: { lat: 43.48111491245195, lng: -1.557998520238156 }
+        });
+
+        // Marker 1: Muntz main
+        const  position1 = { lat: 43.52137591229039, lng: -1.5022029576718345 }
+        const markerMuntz = new google.maps.Marker({
+          position: position1,
           map: mapMuntz
         });
+
+        const infoMuntz = new google.maps.InfoWindow({
+          content: "<img src='assets/logoLight-c8c665c1aba8b83bac8cde2367ef43728bc674cbc32b9d18c674bdb5a2d917b5.png' width='50px'><div style='display:flex'><strong>Muntz Floor</strong></div><br><strong>Studio CDANTZA</strong><br><a href='https://www.google.com/maps/place/STUDIO+CDANTZA/@43.521193,-1.5070524,17z/data=!3m1!4b1!4m6!3m5!1s0xd5141782b1cc081:0xd757c9a7f3cf8a85!8m2!3d43.5211892!4d-1.5021815!16s%2Fg%2F11qzcpc503!5m1!1e4?hl=fr&entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoASAFQAw%3D%3D'>studio CDANTZA 4 rue du Lazaret</a>"
+        });
+
+        markerMuntz.addListener("click", () => {
+          infoMuntz.open(mapMuntz, markerMuntz);
+        });
+
+        // Marker 2: Second marker on Muntz map
+        const position2 = { lat: 43.4815, lng: -1.5585 };
+        const secondMarker = new google.maps.Marker({
+          position: position2,
+          map: mapMuntz,
+          title: "Second Marker"
+        });
+
+        const infoSecond = new google.maps.InfoWindow({
+          content: "<img src='assets/logoLight-c8c665c1aba8b83bac8cde2367ef43728bc674cbc32b9d18c674bdb5a2d917b5.png' width='50px'><div style='display:flex'><strong>Muntz Floor</strong></div><br><strong>Studio Maritzuli</strong><br><a href='https://www.google.com/maps/place/8+Rue+Jean+Bart,+64200+Biarritz/@43.4809708,-1.5629177,17z/data=!3m1!4b1!4m6!3m5!1s0xd516ad7b0a6ecbf:0xd62e2f2bb86ae976!8m2!3d43.480967!4d-1.5580468!16s%2Fg%2F11c2h4th_f?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D'>8 rue Jean Bart</a>"
+        });
+
+        secondMarker.addListener("click", () => {
+          infoSecond.open(mapMuntz, secondMarker);
+        });
+
+        const bounds = new google.maps.LatLngBounds();
+        bounds.extend(position1);
+        bounds.extend(position2);
+        mapMuntz.fitBounds(bounds);
       }
+      window.initMap = initMap;
     </script>
 
     <style>
