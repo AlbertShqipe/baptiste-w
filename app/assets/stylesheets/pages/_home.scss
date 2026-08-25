@@ -562,11 +562,12 @@
         }
 
         .munz-image {
-          width: 35%;
-          height: 80%;
+          width: 30%;
+          height: auto;
+          aspect-ratio: 707 / 1000; // matches munz.jpeg's native 1414x2000 ratio
           text-align: center;
           background-image: url('munz.jpeg');
-          background-size: cover;
+          background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
           border-radius: 20px;
@@ -576,7 +577,7 @@
 
           @media (max-width: 960px) {
             width: 70%;
-            height: 50%;
+            height: auto;
             margin: auto;
             margin-top: 10px;
           }
